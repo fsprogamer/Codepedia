@@ -66,3 +66,24 @@ public partial class _Default : System.Web.UI.Page
         return carList;
     }
 }
+
+/*
+  $(document).ready(function () {
+              $('#<%=Button1.ClientID %>').click(function () {
+               $.ajax({
+                      type: "POST",
+                      url: "CS.aspx/getListOfCars",
+                      data: "{'aData': '2014'}",
+                      contentType: "application/json; charset=utf-8",
+                      dataType: "json",
+                      async: true,
+                      cache: false,
+                      success: function (msg) {
+                          $('#contentHolder').text(msg.d);
+                     }
+                 })
+                 return false;
+             });
+        });
+
+*/
